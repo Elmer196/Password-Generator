@@ -1,137 +1,253 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+body{
+    background-color: aquamarine;
 }
 
-html,
-body,
-.wrapper {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
+.container .conHeader{
+    border: 5px solid black;
+    margin-top: 13%;
+    padding-bottom: 2%;
+    background-color: blanchedalmond;
 }
 
-.wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+.container h1{
+    text-align: center;
+    color: red;
+    text-align: center;
 }
 
-header {
-  text-align: center;
-  padding: 20px;
-  padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+.container button{
+    text-align: center;
+    font-size: larger;
+    margin-left: 45%;
+    background-color: black;
+    color: white;
 }
 
-.card {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
-  font-size: 18px;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 30px 40px;
+.quizTimer{
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-.card-header::after {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
+.quizTimer p{
+    font-size: larger;
+    color: black;
 }
 
-.card-body {
-  min-height: 100px;
+.container2{
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-.card-footer {
-  text-align: center;
+.container2 #quizStart{
+    border: 5px solid black;
+    margin-top: 13%;
+    padding-bottom: 2%;
+    background-color: blanchedalmond;
 }
 
-.card-footer::before {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
+.container2 h1{
+    color: red;
+    font-size: xx-large;
+    text-align: center;
 }
 
-.card-footer::after {
-  content: " ";
-  display: block;
-  clear: both;
+.container2 button{
+    text-align: center;
+    font-size: larger;
+    margin-left: 45%;
+    background-color: black;
+    color: white;
 }
 
-.btn {
-  border: none;
-  background-color: hsl(360, 91%, 36%);
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
-  display: inline-block;
-  font-size: 22px;
-  line-height: 22px;
-  margin: 16px 16px 16px 20px;
-  padding: 14px 34px;
-  text-align: center;
-  cursor: pointer;
+.container3{
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-button[disabled] {
-  cursor: default;
-  background: #c0c7cf;
+.container3 #quizQ2{
+    border: 5px solid black;
+    margin-top: 13%;
+    padding-bottom: 2%;
+    background-color: blanchedalmond;
 }
 
-.float-right {
-  float: right;
+.container3 h1{
+    color: red;
+    font-size: xx-large;
+    text-align: center;
 }
 
-#password {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  display: block;
-  width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
-  border-radius: 6px;
-  resize: none;
-  overflow: hidden;
+.container3 button{
+    text-align: center;
+    font-size: larger;
+    margin-left: 45%;
+    background-color: black;
+    color: white;
 }
 
-@media (max-width: 690px) {
-  .btn {
-    font-size: 1rem;
-    margin: 16px 0px 0px 0px;
-    padding: 10px 15px;
-  }
-
-  #password {
-    font-size: 1rem;
-  }
+.container4{
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (max-width: 500px) {
-  .btn {
-    font-size: 0.8rem;
-  }
+.container4 #quizQ3{
+    border: 5px solid black;
+    margin-top: 13%;
+    padding-bottom: 2%;
+    background-color: blanchedalmond;
 }
+
+.container4 h1{
+    color: red;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.container4 button{
+    text-align: center;
+    font-size: larger;
+    margin-left: 45%;
+    background-color: black;
+    color: white;
+}
+
+.container5{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.container5 #quizQ4{
+    border: 5px solid black;
+    margin-top: 13%;
+    padding-bottom: 2%;
+    background-color: blanchedalmond;
+}
+
+.container5 h1{
+    color: red;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.container5 button{
+    text-align: center;
+    font-size: larger;
+    margin-left: 45%;
+    background-color: black;
+    color: white;
+}
+
+.container6{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.container6 #quizQ5{
+    border: 5px solid black;
+    margin-top: 13%;
+    padding-bottom: 2%;
+    background-color: blanchedalmond;
+}
+
+.container6 h1{
+    color: red;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.container6 button{
+    text-align: center;
+    font-size: larger;
+    margin-left: 45%;
+    background-color: black;
+    color: white;
+}
+
+.container7{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container7 h1{
+    text-align: center;
+    margin-top: 10%;
+    width: 100%;
+    order: 1;
+    font-size: 60px;
+}
+
+.container7 h2{
+    text-align: center;
+    width: 100%;
+    margin-top: 10%;
+    order: 2;
+    font-size: 30px;
+}
+
+.container7 h3{
+    text-align: center;
+    order: 3;
+    flex-shrink: 0;
+    padding-left: 10%
+}
+
+.container7 input{
+    order: 4;
+    flex-shrink: 0;
+    margin-left: 25%;
+}
+
+.container7 button{
+    order: 5;
+    text-align: center;
+    font-size: larger;
+    background-color: black;
+    color: white;
+    margin-left: 25%;
+}
+
+.scorePage{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.scorePage h1{
+    text-align: center;
+    margin-top: 10%;
+    width: 100%;
+    order: 1;
+    font-size: 60px;
+}
+
+.scorePage ol{
+    text-align: center;
+    width: 100%;
+    order: 2;
+    font-size: 30px;
+    color: red;
+}
+
+.scorePage button{
+    order: 3;
+    text-align: center;
+    font-size: larger;
+    background-color: black;
+    color: white;
+}
+
