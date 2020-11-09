@@ -6,7 +6,7 @@ Has timer to end quiz prematurely if need be
 
 Stores user names and high scores
 
-User has the ability to retstart quiz and keep high scores or clear them
+User has the ability to restart quiz and keep high scores or clear them
 
 Website URL: https://elmer196.github.io/
 
