@@ -2,8 +2,6 @@ var highScore = 0;
 var timeleft = 60;
 var clockTimer = setInterval(function(){
   if(timeleft <= 0){
-    clearInterval(clockTimer);
-    document.getElementById("timer").innerHTML = "Finished";
     document.getElementById("q5Button3").click(); 
   } else {
     document.getElementById("timer").innerHTML = timeleft + " seconds remaining";
@@ -403,6 +401,7 @@ document.getElementById("q5Button3").addEventListener("click", function(){
     var hide7 = document.getElementById("div6");
     var show7 = document.getElementById("div7");
     var hideTime = document.getElementById("quizClock");
+    timeleft= 60;
     document.getElementById("score").innerHTML = "Your high score: " + highScore;
     if(hide7.style.display === "none"){
         hide7.style.display = "flex";
@@ -455,6 +454,8 @@ document.getElementById("q5Button4").addEventListener("click", function(){
 });
 
 document.getElementById("turnIn").addEventListener("click", function(){
+    timeleft = 60;
+    highScore = 0;
     var hide8 = document.getElementById("div7");
     var show8 = document.getElementById("div8");   
     var nameValue = document.getElementById("userName").value;
@@ -482,8 +483,6 @@ document.getElementById("turnIn").addEventListener("click", function(){
 });
 
 document.getElementById("goBack").addEventListener("click", function(){
-    timeleft = 60;
-    highScore = 0;
     var hide9 = document.getElementById("div8");
     var show9 = document.getElementById("div1");
 
@@ -505,7 +504,6 @@ document.getElementById("goBack").addEventListener("click", function(){
 });
 
 document.getElementById("clearHS").addEventListener("click", function(){
-    timeleft = 60;
     highScore = 0;
     var removeHS = document.getElementById("displayName");
 
