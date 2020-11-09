@@ -1,91 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <title>Coding Quiz</title>
-</head>
-<body>
-    <div class="container" id="div1">
-        <header class="conHeader">
-            <h1 id="firstH1">Coding Quiz Challenge</h1>
-            <p>The following is a timed quiz on subjects we've learned in our coding bootcamp thus far. Press start quiz whenever you're ready, and good luck.
-            </p>
-            <button id="myBtn">Start Quiz</button>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
     </div>
-    <div class="quizTimer" id="quizClock">
-        <p id="timer"></p>
-    </div>
-    <div class="container2" id="div2">
-        <section id="quizStart">
-            <h1>1. Commonly used data types do not include: </h1>
-            <button id="q1Button">1. Strings</button>
-            <button id="q1Button2">2. Booleans</button>
-            <button id="q1Button3">3. Alerts</button>
-            <button id="q1Button4">4. Numbers</button>
-        </section>
-    </div>
-    <div class="container3" id="div3">
-        <section id="quizQ2">
-            <h1>2. The condition in an if/else statement is enclosed within: </h1>
-            <button id="q2Button">1. Quotes</button>
-            <button id="q2Button2">2. Curly Brackets</button>
-            <button id="q2Button3">3. Parentheses</button>
-            <button id="q2Button4">4. Square Brackets</button>
-        </section>
-    </div>
-    <div class="container4" id="div4">
-        <section id="quizQ3">
-            <h1>3. Arrays in JaveScript can be used to store: </h1>
-            <button id="q3Button">1. Numbers and Strings</button>
-            <button id="q3Button2">2. Other Arrays</button>
-            <button id="q3Button3">3. Booleans</button>
-            <button id="q3Button4">4. All of the above</button>
-        </section>
-    </div>
-    <div class="container5" id="div5">
-        <section id="quizQ4">
-            <h1>4. String values must be enclosed within ___ when being assigned to variables: </h1>
-            <button id="q4Button">1. Commas</button>
-            <button id="q4Button2">2. Curly Brackets</button>
-            <button id="q4Button3">3. Quotes</button>
-            <button id="q4Button4">4. Parentheses</button>
-        </section>
-    </div>
-    <div class="container6" id="div6">
-        <section id="quizQ5">
-            <h1>5. A very useful tool used during development and debugging for printing content to the debugger: </h1>
-            <button id="q5Button">1. Javascript</button>
-            <button id="q5Button2">2. Terminal/Bash</button>
-            <button id="q5Button3">3. For Loops</button>
-            <button id="q5Button4">4. Console Log</button>
-        </section>
-    </div>
-    <div class="container7" id="div7">
-        <section>
-            <h1>All done!</h1>
-            <h2 id="score"></h2>
-            <h3>Enter your name:</h3>
-            <input type="text" id="userName">
-            <button id="turnIn">Submit Highscore</button>
-        </section>
-    </div>
-    <div class="scorePage" id="div8">
-        <h1>Highscores: </h1>
-        <ol id="displayName"></ol>
-        <button id="goBack">Go Back</button>
-        <button id="clearHS">Clear Highscore</button>
-    </div>
-
-
-
-
-
-
-    <script src="java.js"></script>
-    
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
